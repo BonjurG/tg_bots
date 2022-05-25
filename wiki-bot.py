@@ -25,7 +25,7 @@ def getwiki(s):
         return 'Увы и ах, на вики этого нет либо на компе у Ивана, отключен сервер'
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
-    bot.send_message(m.chat.id, 'Напиши мне любое слово и я изи найду его')
+    bot.send_message(m.chat.id, 'Напиши мне любое слово и я легко найду его ;)')
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
     bot.send_message(message.chat.id, getwiki(message.text))
